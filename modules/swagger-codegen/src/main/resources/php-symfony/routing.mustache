@@ -10,6 +10,7 @@
 {{bundleAlias}}_{{pathPrefix}}_{{operationIdLowerCase}}:
     path:     {{path}}
     methods:  [{{httpMethod}}]
+    schemes:  [{{scheme}}]
     defaults:
         _controller: {{bundleAlias}}.controller.{{pathPrefix}}:{{operationId}}Action
     {{#hasPathParams}}
